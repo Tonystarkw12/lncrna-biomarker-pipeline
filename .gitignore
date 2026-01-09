@@ -50,10 +50,11 @@ results/*.txt
 results/*.pkl
 results/*.h5
 
-# Figures (regenerate from scripts)
-figures/*.png
-figures/*.pdf
-figures/*.svg
+# Figures (keep the visualization results)
+# Uncomment below to ignore figures if you want to regenerate them
+# figures/*.png
+# figures/*.pdf
+# figures/*.svg
 
 # Logs
 *.log
