@@ -4,18 +4,6 @@
 
 本项目实现了一个完整的、生产级的机器学习流程，用于识别区分肝细胞癌(LIHC)肿瘤样本与正常样本的**长链非编码RNA (lncRNA)**生物标志物。
 
-### ⚠️ 重要更新
-
-**版本历史:**
-- **v2.0 (当前)**: 修复数据泄露问题，正确的训练/测试划分
-  - 先划分数据集，再进行特征选择
-  - 交叉验证准确率: **98.5% ± 0.9%**
-  - AUC-ROC: 1.000 (测试集规模较小，仅供参考)
-
-- **v1.0**: 初始版本（存在数据泄露）
-  - 特征选择使用了全部数据
-  - 导致虚假的完美性能 (AUC=1.0)
-
 ### 生物学背景
 
 #### 为什么选择lncRNA？
@@ -259,35 +247,17 @@ A: 修改`N_SELECTED_FEATURES = 30`。
 2. **早期诊断**: 识别早期肝癌标志物
 3. **治疗靶点**: 探索治疗潜力
 
-## 学术价值
-
-本项目展示了以下技能:
-- ✅ **生物信息学**: TCGA数据处理、差异表达分析
-- ✅ **机器学习**: 特征工程、模型训练、性能评估
-- ✅ **编程能力**: Python, 模块化设计, 生产级代码
-- ✅ **科研思维**: 实验设计、问题诊断、结果解读
 
 **特别强调:**
 - 正确处理训练/测试集划分
 - 避免数据泄露
 - 使用交叉验证获得可靠性能估计
 
-## 引用
-
-如果您在研究中使用了本流程，请引用:
-
-```
-TCGA Research Network. Comprehensive and Integrative Genomic
-Characterization of Hepatocellular Carcinoma. Cell. 2017.
-
-GENCODE Consortium. The GENCODE Encyclopedia of human
-genomic features. Nature 2019.
-```
 
 ## 作者
 
-Bioinformatics Ph.D. Student
-Lab Rotation Application
+邮箱：zhou-zh23@mails.tsinghua.edu.cn
+
 
 ## 许可证
 
